@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+  }
+  
+  
+  .container {
+    justify-content: flex-start;
+    align-self: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+  
+    position: relative;
+  }
+
+  .heading{
+    text-align: center;
+    line-height: 45px;
+    padding: 30px,30px,30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 1;
+    color: #4f2352;
+  }
+
+  .head-footer{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px,30px,30px;
+    z-index: 1;
+    color:#929093;
+  }
+
+  .ratings{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .rating-txt{
+    background-color: #fbfbfb;
+    width: 450px;
+    height: 70px;
+    border: 2px solid #e9e9e9;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: darkred;
+
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+  }
+
+  .rating-txt p{
+    margin-bottom: 5px;
+  }
+
+  .testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 25px ;
+
+  }
+
+  .testimonials .card:not(:first-child){
+    margin-left: 20px;
+  }
+
+  .card{
+    background-color:#511f50;
+    border-radius: 20px;
+    padding: 10px;
+    width: 22%;
+
+    
+  }
+
+  .card-usertestimonial::before {
+    position: absolute;
+    left: -10px;
+    content: "\"";
+    font-size: 2rem;
+    font-style: italic;
+  }
+
+  .carduserinfo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .cardusertestmonial{
+    
+    position: relative;
+    padding: 10px;
+    text-indent: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 00.9rem;
+    color: #e7cee7;
+
+  }
+
+  .cardusertestmonial::before{
+    position: absolute;
+    font-size: 2rem;
+    font-style: italic;
+    left: -10px;
+    content: "\"";
+  }
+
+  .userimage{
+    width: 80px;
+  }
+
+  .userimage img{
+    border-radius: 50%;
+    width: 50px;
+    border: 2px solid white;
+    
+  }
+
+  .cardusername{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .cardusername .username{
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: #fff2ff;
+  }
+
+  .cardusername .useraddinfo{
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    text-shadow: #cf4aa6 0 0 1px;
+
+  }
+
+  .cardusername .useraddinfo span{
+    padding-left : 5px;
+    color: #c6ab51;
+  }
+
+  .newsletter{
+    background-color: #f5b554;
+    width: 100%;
+    height: 250px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  
+    padding: 20px,10px,50px,10px;
+    box-sizing: border-box;
+  }
+
+  .nlheader{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #47463b;
+
+  }
+
+  .nldescr{
+    font-weight: 500;
+    padding: 10px,20px,20px;
+    font-size: 0.8re;
+    color: #47463b;
+  }
+
+  .nlform input{
+    padding: 10px;
+    width: 200px;
+    height: 19px;
+    box-sizing: content-box;
+    background-color: #f8c171;
+    border: 1px solid #ebb262;
+  }
+
+  .nlform input:not(:first-child){
+    margin-left: 20px;
+  }
+
+  .nlform button{
+    padding:10px,19px ;
+    margin-left: 20px;
+    height: 19px;
+    box-sizing:content-box ;
+    text-transform: uppercase;
+    border: 1px solid #eeb465;
+    cursor: pointer;
+  }
